@@ -1,7 +1,8 @@
-
 import { useState } from 'react'
 import './App.css'
 import { useEffect } from 'react';
+import Header from './components/Header/Header';
+import Recipes from './components/Recipes/Recipes';
 
 function App() {
 
@@ -18,10 +19,11 @@ function App() {
   } ,[])
 
 
-  console.log(recipes);
+ 
   return (
     <>
-      
+      <Header></Header>
+      <Recipes recipes = {recipes}></Recipes>
     </>
       
   )
