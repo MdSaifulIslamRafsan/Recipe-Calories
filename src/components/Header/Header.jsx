@@ -113,6 +113,8 @@ const Header = () => {
           className="hero lg:h-[450px] rounded-2xl"
           style={{
             background: "url(https://i.ibb.co/X3rhWR5/Rectangle-1.png)",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover"
           }}
         >
           <div className="hero-overlay rounded-2xl bg-opacity-60"></div>
