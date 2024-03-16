@@ -4,10 +4,10 @@ import CurrentlyCook from "../CurrentlyCook/CurrentlyCook";
 const CurrentlyCooking = ({ cookings , totalTime , totalCalories}) => {
   return (
     <section className="mt-10">
-      <h2 className="text-xl font-semibold text-center">
+      <h2 className="text-xl font-semibold text-[#282828] text-center">
         Currently cooking: {cookings.length}
       </h2>
-      <table className="table">
+      <table className="table fira-sans">
         {/* head */}
         <thead>
           <tr>
@@ -18,7 +18,7 @@ const CurrentlyCooking = ({ cookings , totalTime , totalCalories}) => {
           </tr>
         </thead>
             {/* table body */}
-            <tbody>
+            <tbody className="text-[#282828B2] ">
                 {cookings.map((cook, index) => <CurrentlyCook cook={cook} index={index} key={cook?.recipe_id}></CurrentlyCook>)}
                 <tr>
                     <td></td>
@@ -35,6 +35,8 @@ const CurrentlyCooking = ({ cookings , totalTime , totalCalories}) => {
 
 CurrentlyCooking.propTypes = {
   cookings: PropTypes.array.isRequired,
+  totalTime: PropTypes.number.isRequired,
+  totalCalories: PropTypes.number.isRequired,
 };
 
 export default CurrentlyCooking;

@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header>
+    <header className="lexend">
       {/* navbar start */}
       <nav className="my-5">
         <div className="navbar bg-base-100">
@@ -123,16 +123,16 @@ const Header = () => {
               <h1 className="mb-5 text-xl lg:text-5xl font-bold">
                 Discover an exceptional cooking class tailored for you!
               </h1>
-              <p className="mb-5">
+              <p className="mb-5 font-normal">
                 offers a diverse collection of easy-to-follow recipes ranging
                 from classic comfort foods to innovative culinary creations,
                 catering to all tastes and skill levels.
               </p>
               <div className="flex flex-col gap-4 lg:flex-row justify-center">
-                <button className="btn bg-[#0BE58A] rounded-full">
+                <button className="btn font-semibold bg-[#0BE58A] rounded-full">
                   Explore Now
                 </button>
-                <button className="btn btn-outline text-white rounded-full hover:bg-[#0BE58A] hover:text-black">
+                <button className="btn font-semibold btn-outline text-white rounded-full hover:bg-[#0BE58A] hover:text-black">
                   Our Feedback
                 </button>
               </div>

@@ -5,13 +5,13 @@ import OrderToCook from '../OrderToCook/OrderToCook';
 const OrderToCooks = ({cooks , handelPreparingBtn}) => {
     return (
         <div>
-          <h2 className="text-xl font-semibold text-center">
+          <h2 className="text-xl font-semibold text-[#282828] text-center">
             Want to cook: {cooks.length}
           </h2>
           <div className="overflow-x-auto">
-            <table className="table">
+            <table className="table text-[#878787] fira-sans">
               {/* table head */}
-              <thead>
+              <thead className='font-medium'>
                 <tr>
                   <th></th>
                   <th>Name</th>
@@ -20,7 +20,7 @@ const OrderToCooks = ({cooks , handelPreparingBtn}) => {
                   <th></th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className='font-normal'>
                 {/* table body */}
     
                 {cooks.map((cook, index) => (
