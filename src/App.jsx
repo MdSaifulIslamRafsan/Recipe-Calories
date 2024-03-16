@@ -30,7 +30,8 @@ function App() {
   const handlerWantToCookBtn = (WantToCook) => {
 
     const newCook =  cooks.find(item => item?.recipe_id === WantToCook?.recipe_id);
-    if (!newCook) {
+    const newCooking =  cookings.find(item => item?.recipe_id === WantToCook?.recipe_id);
+    if (!newCook && !newCooking) {
       SetCooks([...cooks , WantToCook])
       toast.success('Order successful!');
     }else{
