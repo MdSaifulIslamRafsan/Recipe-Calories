@@ -44,7 +44,7 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <a className="text-xl lg:text-3xl whitespace-nowrap font-bold">Recipe Calories</a>
+            <a className="text-lg lg:text-3xl whitespace-nowrap font-bold">Recipe Calories</a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
